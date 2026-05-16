@@ -5,7 +5,8 @@
     margin: 0 auto;
 }
 body {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: "Open Sans", sans-serif;
     /* list-style: none;
     font-family: sans-serif;
     margin: 10px;
@@ -14,13 +15,14 @@ body {
 }
 header {
     color: #fff;
-    font-family: arial;
 }
 #course-title{
     display: block;
     padding: 20px;
     text-align: center;
     background-color: rgb(13, 13, 97);
+    font-family: "Roboto", sans-serif;
+
 }
 /* div p{
 
@@ -43,6 +45,10 @@ nav a{
    color: #fff;
    font-weight: 400;
    
+}
+li:hover{
+    background-color: rgb(8, 143, 8);
+    transform: translatex(-2px);
 }
 
 main {
