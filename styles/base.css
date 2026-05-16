@@ -46,9 +46,13 @@ nav a{
    font-weight: 400;
    
 }
-li:hover{
-    background-color: rgb(8, 143, 8);
-    transform: translatex(-2px);
+nav a{
+    transition: 0.4s;
+}
+nav a:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: chartreuse;
 }
 
 main {
@@ -81,6 +85,9 @@ h1{
     color: #fff;
     padding: 14px;
     text-align: center;
+}
+.card a{
+    color: blue;
 }
 /* ABOUT SECTION*/
 
