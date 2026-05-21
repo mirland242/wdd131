@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 2rem;
+    font-family: sans-serif;
+} 
+.container {
+    border: 1px solid gray;
+    background-color: #eee;
+
+    width: 350px;
+    padding: 20px;
+
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+}
+.chapter{
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem; */
+    gap: 20px;
+
+}
+#chapt:hover{
+    transition: 0.4s;
+    background-color: #abe
+
+}
+
