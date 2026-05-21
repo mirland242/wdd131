@@ -1,60 +1,6 @@
-:root{
-    --main-color: #f5f4f4;
-    --main-measurement: 2rem;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    list-style: none;
-    font-family: "spline sans";
-    /* padding: 2rem; */
-}
-header{
-    display: flex;
-    justify-content: space-evenly;
-    
-    background-color: tomato;
-    color: var(--main-color);
-    padding: 1rem;
-    margin-bottom: var(--main-measurement);
-}
-header h1{
-    margin: 4px 0;
-    font-family: "open sans";
-}
-header ul{
-    text-align: center;
-    margin-top: 1rem;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    font-family: "roboto";
-    
-}
-nav a{
-    text-decoration: none;
-    padding: 0.5rem;
-    color: var(--main-color);
-    transition: 0.4s;
-    
-    
-}
-.navigation a:hover{
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-color: #121111;
-    
+/**Mobile device code**/
 
-}
-main h1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: var(--main-measurement);
-}
+
 /**BURGER BUTTON**/
 
 #burger{
@@ -78,12 +24,6 @@ main h1{
     background: white;
     position: absolute;
 }
-/* #burger{
-    margin: 1rem;
-    width: 2rem;
-    height: 1rem;
-    background: white;
-} */
 
 /**Transform Burger Into X **/
 #burger.show {
@@ -131,43 +71,4 @@ main h1{
         display: grid;
         grid-template-columns: 1fr;
     }
-}
-
-footer{
-    background-color: rgb(254, 102, 75);
-    color: #e2e2e2;
-    margin-top: var(--main-measurement);
-    padding: 1rem;
-}
-footer p{
-    padding: 0.5rem;
-}
-.captions{
-    display: grid;
-    border: 1rem black;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:20px
-}
-image{
-    display: block;
-    max-width: 100%;
-}
-.captions img{
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem
-}
-figure img{
-
-    margin: 0 1rem;
-    box-shadow: 0 3px 3px rgb(18, 18, 18);
-    
-}
-figcaption{
-    text-align: center;
-    font-weight: bold;
-    color: rgb(210, 93, 9);
-    margin: 0.5rem 0;
-    
-
 }
