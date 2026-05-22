@@ -1,6 +1,5 @@
 /**Mobile device code**/
 
-
 /**BURGER BUTTON**/
 
 #burger{
@@ -8,36 +7,32 @@
     margin: 1rem;
     width: 2rem;
     height: 4px;
-    background-color: white;
+    background: transparent;
     border: none;
     transition: 0.3s;
     position: relative;
+
+
 }
 /**Top and Button lines**/
 
-#burger::before,
-#burger::after{
-    content: "";
-    display: block;
-    width: 2rem;
-    height: 4px;
-    background: white;
+#burger:before{
+    content:"☰";
+    color: #fff;
+    font-size: 2rem;
     position: absolute;
-}
-
-/**Transform Burger Into X **/
-#burger.show {
-    background: transparent;
-}
-
-#burger.show::before {
-    transform: rotate(45deg);
+    top: -10px;
+    left: 0;
     
 }
 
-#burger.show::after {
-    transform: rotate(-45deg);
+
+/**Transform Burger Into X **/
+#burger.show::before{
+    background: transparent;
+    content: "✕";
 }
+
 
 /**Mobile version**/
 
@@ -45,7 +40,6 @@
     #burger{
         display: block;
     }
-
 
     /**Hide Navbar**/
 
@@ -59,12 +53,16 @@
         padding: 1rem 0;
         text-align: center;
     }
+
     /**Show menu when open**/
+    /**new code**/
 
     .navigation.show{
+
         display: flex;
     }
-    nav a{
+
+    nav li{
         padding: 1rem 0;
     }
     .captions{

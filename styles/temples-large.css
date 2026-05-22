@@ -1,6 +1,7 @@
 :root{
     --main-color: #fff;
     --main-measurement: 2rem;
+    --main-background:  #c43e26;
 }
 *{
     margin: 0;
@@ -16,7 +17,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     
-    background-color: tomato;
+    background-color: var(--main-background);
     color: var(--main-color);
     padding: 1rem;
     margin-bottom: var(--main-measurement);
@@ -63,10 +64,13 @@ main h1{
 
 footer{
     /* background-color: rgb(254, 102, 75); */
-    background-color: rgb(254, 99, 71);
+    background-color:  var(--main-background);
     color: var(--main-color);
     margin-top: var(--main-measurement);
     padding: 1rem;
+}
+#updateDate, #lastModified{
+    color: var(--main-color);
 }
 footer p{
     padding: 0.5rem;
@@ -95,7 +99,7 @@ figure img{
 figcaption{
     text-align: center;
     font-weight: bold;
-    color: rgb(210, 93, 9);
+    color: #2e7d32;
     margin: 0.5rem 0;
     
 
