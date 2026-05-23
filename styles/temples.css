@@ -1,72 +1,110 @@
-/**Mobile device code**/
+/*** Mobile device part*/
+/*From Burger button to show nav bar */
 
-/**BURGER BUTTON**/
+/*NAVIGATION-------------------------------*/
+
+.navigation{
+
+    display: none;
+
+    flex-direction: column;
+
+    list-style: none;
+
+    /* position: absolute; */
+
+    top: 50%;
+    right: 0;
+
+    width: 100%;
+
+    background: #444;
+
+    text-align: center;
+
+    padding: 1rem 0;
+}
+.navigation li{
+    padding: 0.5rem 0;
+}
+
+/** SHOW MENU **/
+
+.navigation.show{
+    display: flex;
+}
+
+/** LINKS **/
+
+.navigation a{
+
+    /* display: block; */
+
+    padding: 1rem;
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+.navigation a:hover{
+    background: #171717;
+}
+
+/** BURGER BUTTON **/
 
 #burger{
-    display: none;
+
+    display: block;
+
     margin: 1rem;
+
     width: 2rem;
-    height: 4px;
+
+    height: 2rem;
+
     background: transparent;
+
     border: none;
-    transition: 0.3s;
+
     position: relative;
 
-
+    cursor: pointer;
 }
-/**Top and Button lines**/
 
-#burger:before{
-    content:"☰";
-    color: #fff;
+/** BURGER ICON **/
+
+#burger::before{
+
+    content: "☰";
+
+    color: white;
+
     font-size: 2rem;
+
     position: absolute;
+
     top: -10px;
     left: 0;
-    
 }
 
+/** X ICON **/
 
-/**Transform Burger Into X **/
 #burger.show::before{
-    background: transparent;
+
     content: "✕";
 }
 
 
-/**Mobile version**/
 
-@media (max-width:780px){
-    #burger{
-        display: block;
-    }
+.captions img{
 
-    /**Hide Navbar**/
+    width: 100%;
 
-    .navigation{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-        top:100%;
-        width: 100%;
-        padding: 1rem 0;
-        text-align: center;
-    }
+    height: auto;
 
-    /**Show menu when open**/
-    /**new code**/
+    display: block;
 
-    .navigation.show{
-
-        display: flex;
-    }
-
-    nav li{
-        padding: 1rem 0;
-    }
-    .captions{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+    border-radius: 15px;
 }
