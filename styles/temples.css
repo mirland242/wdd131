@@ -49,7 +49,7 @@
 }
 
 .navigation a:hover{
-    background: #171717;
+    background: var(--hover-color);
 }
 
 /** BURGER BUTTON **/
@@ -96,15 +96,3 @@
     content: "✕";
 }
 
-
-
-.captions img{
-
-    width: 100%;
-
-    height: auto;
-
-    display: block;
-
-    border-radius: 15px;
-}

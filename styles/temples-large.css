@@ -2,6 +2,7 @@
     --main-color: #fff;
     --main-measurement: 2rem;
     --main-background:  #c43e26;
+    --hover-color: #171717;
 }
 *{
     margin: 0;
@@ -22,6 +23,9 @@ header{
     color: var(--main-color);
     padding: 1rem;
     margin-bottom: var(--main-measurement);
+}
+nav{
+   display: flex;
 }
 header .nav-title{
     margin: 4px 0;
@@ -94,23 +98,20 @@ footer p{
 }
 .captions{
     display: grid;
-    border: 1rem black;
+    border: 1rem var(--hover-color);
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px
 }
-img{
-    display: block;
-    max-width: 100%;
-}
+
 .captions img{
     width: 100%;
     height: auto;
-    border-radius: 0.5rem
-}
-figure img{
-
+    border-radius: 0.5rem;
+    display: block;
+    max-width: 100%;
     margin: 0 1rem;
-    box-shadow: 0 3px 3px rgb(18, 18, 18);
+    /* box-shadow: 0 3px 3px rgb(18, 18, 18); */
+    box-shadow: 0 3px 3px var(--hover-color);
     
 }
 figcaption{
