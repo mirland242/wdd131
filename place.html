@@ -17,13 +17,14 @@
         <h1>Ethiopia</h1>
     </header>
     <main class="all">
-        <article>
-            <picture>
-                <source scrset="images/ethiopia-small.webp" media="(min-width: 600px)" alt="a picture of Ethiopia">
-                <source scrset="images/ethiopia-large.webp" media="(max-width: 1000px)" alt="a picture of Ethiopia">
-                <img src="images/ethiopia-picture.webp" alt="The beautiful city of Ethiopia" width="100%" height="auto">
-            </picture>
-        </article>
+        <picture>
+            <source srcset="images/ethiopia-picture.webp"
+                media="(max-width: 599px)">
+            <source srcset="images/ethiopia-picture.webp"
+                media="(min-width: 600px)">
+            <img src="images/ethiopia-picture.webp" alt="Landscape of Ethiopia">
+        </picture>
+
         <section class="data">
             <h2>Data</h2>
             <p><strong>Area:</strong> 1,104,300 sq km</p>
