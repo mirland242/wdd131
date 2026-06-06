@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+</head>
+<body>
+    <main>
+        <h1>A tableau picture</h1>
+        <img src="https://cdns.tblsft.com/sites/default/files/blog/roger1.png/" alt="Tableau loading image" width="400" height="300">
+        <h2> The loading tableau</h2>
+        <table>
+            <caption>Tableau Loading Information</caption>
+            <thead>
+                <tr>
+                    <th>products</th>
+                    <th>prices</th>
+                    <th>quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tableau Desktop</td>
+                    <td>$70 per user/month ✅</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Tableau Server</td>
+                    <td>$35 per user/month ❌</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Tableau Online</td>
+                    <td>$42 per user/month ✅</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+<style>
+    body{
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+    main{
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2{
+        color: #007acc;
+    }
+    caption{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    table{
+        width: 100%;
+        height: auto;
+        border-collapse: collapse;
+        animation: fade 2s; 
+        margin-bottom: 4rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    th, td{
+        border: 1px solid #e1dfdf;
+        padding: 8px;
+    }
+    th{
+        background-color: #f2f2f2;
+        text-align: left;
+    }
+    td:first-child, th:first-child{
+        font-weight: bold;
+    }
+    tr:nth-child(2n){
+        background-color: rgb(152, 151, 151);
+        color: #dedede;
+    }
+    img{
+        transition: transform 0.5s;
+        animation: fade 2s;
+    }
+    @keyframes fade{
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+</style>
+</html>
