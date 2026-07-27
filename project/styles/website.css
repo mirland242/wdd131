@@ -416,18 +416,22 @@ footer .btn2{
 
     /*MAX WIDTH AVOIDS OVERFLOW*/
     width: 100%;
+    /* max-width: 750px; */
     font-size: 5rem;
+    text-align: center;
+
     
     /* padding: 0.5rem; */
     /* align-items: center; */
-    margin: 0 auto;
-    object-fit: contain;
+    /* margin: 0 auto; */
+    /* object-fit: contain; */
 }
 
 .smart-large p{
-    text-align: center;
+   
     color: #ffca3a;
     padding: 0 1rem;
+
 }
 
 
@@ -480,7 +484,7 @@ footer .btn2{
     /*ALIGNMENT TIPS*/
 
     width: 100%;
-    /* max-width: 750px; */
+    max-width: 750px;
     box-sizing: border-box;
 
     display: grid;
