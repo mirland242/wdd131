@@ -28,11 +28,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     text-decoration: none;
+
+    /*AVOID OVERFLOW*/
     max-width: 100%; 
     
      
 }
 .container{
+
+    /*AVOID CONTENT OVERFLOW*/
     overflow: hidden;
     
     padding: 0 1rem;
@@ -48,6 +52,9 @@ header{
     top: 0;
     left: 0;
     width: 100%;*/
+
+    /*--FIXE THE HEADER--*/
+
     position: fixed;
     /* height: 50px; */
     width: 100%;
@@ -245,9 +252,17 @@ section h2,p,span{
 /*SECTION IMAGES*/
 
 section img{
+
+    /*PLACE IMG IN MIDDLE*/
+
+    width: 100%;
     height: 40vh;
+    object-fit: contain;
+    margin: 0 auto;
    
     margin: 1rem 1rem;
+    
+    
 }
 
 /* .about-team{
@@ -285,6 +300,8 @@ figure img{
 }
 .about-content h2,.services-content h2{
     margin: 2rem 1rem;
+
+
     
 }
 
@@ -394,16 +411,26 @@ footer .btn2{
 
 /*LARGE WRITTING*/
 
-.smart-large p{
+.smart-large {
     display: flex;
-    max-width: 1000px;
+
+    /*MAX WIDTH AVOIDS OVERFLOW*/
+    max-width: 750px;
     font-size: 5rem;
-    color: #ffca3a;
-    padding: 0.2rem;
+    
+    /* padding: 0.5rem; */
     justify-content: flex-end;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
+    margin: 0 auto;
 }
+
+.smart-large p{
+    text-align: center;
+    color: #ffca3a;
+}
+
+
 
 /*SOCIAL MEDIA LINKS*/
 
@@ -449,7 +476,13 @@ footer .btn2{
 /*-----FORM------*/
 
 .form-container{
-    max-width: 900px;
+
+    /*ALIGNMENT TIPS*/
+
+    width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
@@ -459,14 +492,16 @@ footer .btn2{
     background-color: #c1c1c1; 
     border: 1px solid #333;
     
+    
 }
 label{
     font-weight: bold;
     margin-bottom: 0.5rem;
+
 }
 
 input[type="name"],
-input[type="date"],input[type="email"],input[type="phone"],input[type="tel"],textarea{
+input[type="date"],input[type="email"], input[type="phone"],input[type="tel"],textarea{
     
     width: 100%;
     padding: 0.6rem;
@@ -505,6 +540,8 @@ select{
     padding: 0.6rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-top: 0.6rem;
+    
 }
 
 .form-group{
