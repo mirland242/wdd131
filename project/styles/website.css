@@ -412,7 +412,7 @@ footer .btn2{
 /*LARGE WRITTING*/
 
 .smart-large {
-    /* display: flex; */
+    display: flex;
 
     /*MAX WIDTH AVOIDS OVERFLOW*/
     width: 100%;
