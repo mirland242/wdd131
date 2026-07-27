@@ -189,7 +189,8 @@ h1, h2, h3 {
 
 .bold{
     
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 1rem;
 }
 
 .hero{
@@ -396,7 +397,7 @@ footer p{
 /*CONTACT BUTTON*/
 footer .btn2{
     border-radius: 1rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
    
     padding: 1rem;
     
@@ -419,7 +420,7 @@ footer .btn2{
     /*MAX WIDTH AVOIDS OVERFLOW*/
     width: 100%;
     /* max-width: 750px; */
-    font-size: 5rem;
+   
     justify-content: center;
     text-align: center;
 
@@ -434,6 +435,7 @@ footer .btn2{
    
     color: #ffca3a;
     padding: 0 1rem;
+    font-size: 3.5rem;
 
 }
 
@@ -641,6 +643,19 @@ html{
         height: 70vh;
         border-radius: 5px;
     }
+
+    /*RESIZE ELEMENTS*/
+
+    .btn2{
+        font-size: 2.5rem;
+    }
+    .smart-large{
+        font-size: 5rem;
+    }
+    .bold{
+        font-size: 1.5rem;
+    }
+    
 }
 
 
