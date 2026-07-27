@@ -412,16 +412,14 @@ footer .btn2{
 /*LARGE WRITTING*/
 
 .smart-large {
-    display: flex;
+    /* display: flex; */
 
     /*MAX WIDTH AVOIDS OVERFLOW*/
     max-width: 750px;
     font-size: 5rem;
     
     /* padding: 0.5rem; */
-    justify-content: flex-end;
     /* align-items: center; */
-    text-align: center;
     margin: 0 auto;
     object-fit: contain;
 }
@@ -503,7 +501,7 @@ label{
 }
 
 input[type="name"],
-input[type="date"],input[type="email"],select, input[type="phone"],input[type="tel"],textarea{
+input[type="date"],input[type="email"],select,textarea{
     
     width: 100%;
     padding: 0.6rem;
