@@ -35,7 +35,17 @@ body p{
     font-weight: 500;
 }
 header{
+    /* position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;*/
+    position: fixed;
+    /* height: 50px; */
+    width: 100%;
+    top: 0px;
     background: #800020;
+    transition: top 0.3s ease; /* smooth slide effect */
     
     padding: 1rem;
 }
@@ -170,7 +180,8 @@ h1, h2, h3 {
     background-image:url('https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?cs=srgb&dl=pexels-fauxels-3184338.jpg&fm=jpg');
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
+    
     margin: 1rem;
 
     display: flex;
@@ -183,11 +194,13 @@ h1, h2, h3 {
     background-color: rgba(255, 255, 255, 0.8);
 
     max-width: 700px;
+    /* height: 40vh; */
 
     padding: 2rem;
 
     border-left: 6px solid #ffca3a;
     border-radius: 10px;
+    /* margin: 1rem; */
 }
 
 /* .about-content{
