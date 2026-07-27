@@ -423,11 +423,13 @@ footer .btn2{
     /* align-items: center; */
     text-align: center;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 .smart-large p{
     text-align: center;
     color: #ffca3a;
+    padding: 0 1rem;
 }
 
 
@@ -501,7 +503,7 @@ label{
 }
 
 input[type="name"],
-input[type="date"],input[type="email"], input[type="phone"],input[type="tel"],textarea{
+input[type="date"],input[type="email"],select, input[type="phone"],input[type="tel"],textarea{
     
     width: 100%;
     padding: 0.6rem;
@@ -535,14 +537,14 @@ button[type="submit"]:hover{
     grid-column: 1 / span 2;
     grid-row: 4;
 }
-select{
+/* select{
     width: 100%;
     padding: 0.6rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 0.6rem;
     
-}
+} */
 
 .form-group{
     display: flex;
